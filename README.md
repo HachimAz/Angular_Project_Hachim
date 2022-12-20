@@ -1,5 +1,5 @@
-#  "email": "hachimaz07@gmail.com",
-#   "password": "Hachimmmmmmmm"
+  "email": "hachimaz07@gmail.com",
+  "password": "Hachimmmmmmmm"
 # FootballBoys
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
