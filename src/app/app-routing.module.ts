@@ -15,8 +15,8 @@ const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
+      { path: '', component: PlayersComponent },
       { path: 'login', component: LoginComponent },
-      { path: 'players', component: PlayersComponent },
       { path: 'player/:id', component: DetailsPlayerComponent },
     ],
   },
