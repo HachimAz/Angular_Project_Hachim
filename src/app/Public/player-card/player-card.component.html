@@ -1,0 +1,50 @@
+<!-- <li>
+  <a [routerLink]="['/player',player.id]">
+      <span class="id"> {{ player.id }} </span>
+      <span class="name"> {{ player.Last_Name }} </span>
+      <span class="name"> {{ player.First_Name }} </span>
+      <span class="name"> {{ player.Current_Team }} </span>
+      <span class="name"> {{ player.Match_played }} </span>
+  </a>
+</li> -->
+
+
+
+<div class="container">
+  <div class="col-md-8">
+      <div class="card" style="width: 18rem;">
+        <img src="{{ player.image }} " class="card-img-top" style="height: 15rem;" >
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ player.First_Name }}  {{ player.Last_Name }}  </h5>
+          <p class="card-text"> <small><b>Current Team</b> {{player.Current_Team}} </small></p>
+          <p class="card-text"> <small><b>Poste </b></small> {{player.poste}} </p>
+          <a [routerLink]="['/player',player.id]" class="btn btn-secondary">See More Details </a>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+
+<!-- <div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm"></div>
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+        <div class="card-body">
+          <p class="card-text">{{player.Last_Name}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div> -->

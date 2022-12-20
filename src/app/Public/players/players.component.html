@@ -1,0 +1,20 @@
+<!-- <ul>
+    <app-player-card *ngFor="let player of players | async" [player]="player"></app-player-card>
+</ul> -->
+
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Players Album</h1>
+      <p class="lead text-muted">Here You can find all your favorites players with all details you need, don't forget to subscribe to get all our new content. <br>Enjoy !!! </p>
+    </div>
+  </div>
+</section>
+
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <app-player-card *ngFor="let player of players | async" [player]="player"></app-player-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,88 @@
+<!-- <form [formGroup]="insertForm" (ngSubmit)="onSubmit()"> -->
+  <!-- <label for="Last_Name">Last Name :</label>
+  <input id="Last_Name" type="email" formControlName="Last_Name">
+
+  <label for="First_Name">First Name :</label>
+  <input id="First_Name" type="email" formControlName="First_Name">
+
+  <label for="Current_Team">Current Team :</label>
+  <input id="Current_Team" type="email" formControlName="Current_Team">
+
+  <label for="Match_played">Match_played :</label>
+  <input id="Match_played" type="email" formControlName="Match_played">
+
+  <label for="Career">Career :</label>
+  <input id="Career" type="email" formControlName="Career">
+
+  <button type="submit"> Insert </button> -->
+
+  <div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <h3>Insert Form</h3>
+            <!-- <p class="blue-text">Just answer a few questions<br> so that we can personalize the right experience for you.</p> -->
+            <div class="card">
+                <h5 class="text-center mb-4">Please enter all details</h5>
+                <form class="form-card" [formGroup]="insertForm" (ngSubmit)="onSubmit()">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                           <label class="form-control-label px-3">First name<span class="text-danger"> *</span></label>
+                          <input type="text" id="First_Name" name="fname" placeholder="Enter your first name" formControlName="First_Name">
+                        </div>
+
+                          <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Last name<span class="text-danger"> *</span></label>
+                            <input type="text" id="last_Name" name="lname" placeholder="Enter your last name" formControlName="Last_Name" >
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                          <label class="form-control-label px-3">Current Team<span class="text-danger"> *</span></label>
+                          <input type="text" id="Current_Team"  placeholder="Real madrid" formControlName="Current_Team">
+                        </div>
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                          <label class="form-control-label px-3"> Match_played<span class="text-danger"> *</span></label>
+                          <input type="text" id="mob"  placeholder= "20" formControlName="Match_played"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                          <label class="form-control-label px-3">Poste <span class="text-danger"> *</span></label>
+                          <input type="text" id="poste"  placeholder="Defender" formControlName="Career">
+                        </div>
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                          <label class="form-control-label px-3">taille<span class="text-danger"> *</span></label>
+                          <input type="text" id="poste"  placeholder="1,73" formControlName="Career">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between text-left">
+
+                    </div>
+
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                          <label class="form-control-label px-3"> Image <span class="text-danger"> *</span></label>
+                          <input type="url" id="image"  placeholder="www.unsplash.fr/az.png" formControlName="image">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-12 flex-column d-flex">
+                          <label class="form-control-label px-3">Career<span class="text-danger"> *</span></label>
+                          <textarea row="3" type="text" id="Career" name="ans" placeholder="" formControlName="Career"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end">
+                        <div class="form-group col-sm-6">
+                          <button type="submit" class="btn-block btn-secondary">Insert</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- </form> -->

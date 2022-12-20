@@ -1,0 +1,36 @@
+<!-- <div *ngIf="player">
+  <h1>{{ player.Last_Name | uppercase }} details</h1>
+  <p>{{ player.id }}</p>
+  <p>{{player.Last_Name | lowercase}}</p>
+  <p>{{player.First_Name | lowercase}}</p>
+  <p>{{player.Current_Team | lowercase}}</p>
+  <p>{{player.Career | lowercase}}</p>
+</div>
+<p *ngIf="!player">Aucun héros n'a été trouvé pour cet id.</p>
+-->
+
+<div class="container border " *ngIf="player" style="margin-top: 5%;">
+    <div class="row ">
+        <div class="col-md-5">
+            <div  class="project-info-box mt-0">
+                <h5> {{ player.Last_Name | uppercase }} DETAILS :</h5>
+                <p class="mb-0">{{ player.Career }}</p>
+            </div>
+
+            <div class="project-info-box">
+                <p><b>Current Team:</b> {{player.Current_Team}} </p>
+                <p><b>Match Played :</b> {{player.Match_played}} </p>
+                <p><b>Taille:</b> {{player.taille}}</p>
+            </div><!-- / project-info-box -->
+
+
+        </div><!-- / column -->
+
+        <div class="col-md-7">
+            <img src="{{player.image}}" alt="project-image" class="rounded" width="100%" height="50%">
+            <div class="project-info-box">
+                <p style="margin-top:1rem ;"><b>Poste:</b> {{player.poste}} </p>
+            </div><!-- / project-info-box -->
+        </div><!-- / column -->
+    </div>
+</div>

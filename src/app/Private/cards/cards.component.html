@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body bg-light" style="height: 10rem;">
+    <h5 class="card-title"> {{player.Last_Name}} {{player.First_Name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted"> {{player.poste}} </h6>
+    <p class="card-text" > {{player.Current_Team}} </p>
+    <!-- <a href="#" class="card-link"> Delete </a> -->
+    <button type="button" class="btn btn-danger" (click)="deletePlayer(player.id)">Delete</button>
+    <!-- <a href="#" class="card-link"> Update </a> -->
+    <button type="button" class="btn btn-success" style="margin-left: 1rem;">Update</button>
+
+  </div>
+</div>
